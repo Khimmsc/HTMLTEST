@@ -1,11 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <title>Wanna Go On A Date With Me?</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'TH SarabunPSK';
             display: flex;
             align-items: center;
             justify-content: center;
@@ -18,23 +18,28 @@
             background: #fff;
             border-radius: 20px;
             padding: 40px;
-            max-width: 360px;
+            max-width: 500px;
             text-align: center;
             box-shadow: 0 5px 20px rgba(0,0,0,.1)
         }
 
         h2 {
             color: #ff4d6d;
-            margin: 10px 0
+            margin: 10px 0;
+            font-size: 36px
+        }
+
+        p#msg {
+            font-size: 22px
         }
 
         button {
-            padding: 12px 24px;
+            padding: 14px 28px;
             border-radius: 30px;
             border: none;
-            font-size: 16px;
+            font-size: 22px;
             cursor: pointer;
-            margin: 5px
+            margin: 8px
         }
 
         #yes {
@@ -51,20 +56,20 @@
     <div class="card" id="card">
         <p style="font-size:80px">&#128150;</p>
         <h2>ไปเดทกันมั้ย?</h2>
-        <p id="msg">พี่ปาล์มไปเดทกับน้องขิมมั้ยค้า &#128525;</p>
+        <p id="msg">พี่ปาล์มไปเดทกับน้องขิมมั้ยค้า&gt;&lt;</p>
         <button id="yes">ไป! &#128523;</button>
         <button id="no">ไม่ไป &#128557;</button>
     </div>
     <script>
         document.getElementById('yes').onclick = function () {
             document.querySelector('h2').textContent = 'เย้! 🎉';
-            document.getElementById('msg').textContent = 'รักรักค่ะ! เจอกันนะ &#128156;';
+            document.getElementById('msg').textContent = 'รักรักค่ะ! เจอกันนะ';
             this.style.display = 'none';
             document.getElementById('no').style.display = 'none';
         };
         document.getElementById('no').onclick = function () {
             document.querySelector('h2').textContent = '🥺';
-            document.getElementById('msg').textContent = 'Im sobbing งอนงอนงอนงอนงอน';
+            document.getElementById('msg').textContent = 'งอนงอนงอนงอนงอน';
         };
     </script>
 </body>
